@@ -1,0 +1,27 @@
+﻿<Window x:Class="StudentManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentManagement"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox Name="studList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="51,48,578,57" BorderBrush="#FFCACACA" BorderThickness="2,2,2,2"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="264,63,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
+        <Label Content="Level" HorizontalAlignment="Left" Margin="264,305,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
+        <Label Content="Age&#xD;&#xA;" HorizontalAlignment="Left" Margin="264,251,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
+        <Label Content="Gender" HorizontalAlignment="Left" Margin="264,200,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
+        <Label Content="Student ID" HorizontalAlignment="Left" Margin="264,150,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="264,106,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
+        <Button Content="Add a Student" HorizontalAlignment="Left" Margin="264,349,0,0" VerticalAlignment="Top" Width="284" Height="25"/>
+        <Label Content="Student List" HorizontalAlignment="Left" Margin="60,14,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
+        <TextBox x:Name="fName" HorizontalAlignment="Left" Margin="412,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="26"/>
+        <TextBox x:Name="age" HorizontalAlignment="Left" Margin="412,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="26"/>
+        <TextBox x:Name="studId" HorizontalAlignment="Left" Margin="412,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="26"/>
+        <TextBox x:Name="lName" HorizontalAlignment="Left" Margin="412,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="26"/>
+        <ComboBox x:Name="gender" HorizontalAlignment="Left" Margin="412,0,0,0" VerticalAlignment="Center" Width="136"/>
+        <ComboBox x:Name="level" HorizontalAlignment="Left" Margin="412,309,0,0" VerticalAlignment="Top" Width="136"/>
+
+    </Grid>
+</Window>
