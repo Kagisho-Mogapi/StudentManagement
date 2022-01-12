@@ -5,23 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudentManagement"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="500" Width="1200">
     <Grid>
-        <ListBox Name="studList" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="51,48,578,57" BorderBrush="#FFCACACA" BorderThickness="2,2,2,2"/>
+        <ListBox Name="studList" d:ItemsSource="{d:SampleData ItemCount=5}" HorizontalAlignment="Left" Margin="51,48,0,0" BorderBrush="#FFCACACA" BorderThickness="2,2,2,2" Width="170" Height="329" VerticalAlignment="Top" SelectionChanged="studList_SelectionChanged"/>
         <Label Content="First Name" HorizontalAlignment="Left" Margin="264,63,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
         <Label Content="Level" HorizontalAlignment="Left" Margin="264,305,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
         <Label Content="Age&#xD;&#xA;" HorizontalAlignment="Left" Margin="264,251,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
         <Label Content="Gender" HorizontalAlignment="Left" Margin="264,200,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
         <Label Content="Student ID" HorizontalAlignment="Left" Margin="264,150,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
         <Label Content="Last Name" HorizontalAlignment="Left" Margin="264,106,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
-        <Button Content="Add a Student" HorizontalAlignment="Left" Margin="264,349,0,0" VerticalAlignment="Top" Width="284" Height="25"/>
+        <Button Content="Add a Student" HorizontalAlignment="Left" Margin="264,349,0,0" VerticalAlignment="Top" Width="284" Height="25" Click="Button_Click"/>
         <Label Content="Student List" HorizontalAlignment="Left" Margin="60,14,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
         <TextBox x:Name="fName" HorizontalAlignment="Left" Margin="412,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="26"/>
         <TextBox x:Name="age" HorizontalAlignment="Left" Margin="412,249,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="26"/>
         <TextBox x:Name="studId" HorizontalAlignment="Left" Margin="412,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="26"/>
         <TextBox x:Name="lName" HorizontalAlignment="Left" Margin="412,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="26"/>
-        <ComboBox x:Name="gender" HorizontalAlignment="Left" Margin="412,0,0,0" VerticalAlignment="Center" Width="136"/>
+        <ComboBox x:Name="genderList" HorizontalAlignment="Left" Margin="412,203,0,0" VerticalAlignment="Top" Width="136"/>
         <ComboBox x:Name="level" HorizontalAlignment="Left" Margin="412,309,0,0" VerticalAlignment="Top" Width="136"/>
+
+        <ListBox x:Name="courseList" d:ItemsSource="{d:SampleData ItemCount=5}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="623,48,0,0" Width="169" Height="314"/>
+        <TextBox x:Name="courseName" HorizontalAlignment="Left" Margin="980
+                 ,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="26"/>
+        <TextBox x:Name="GPA" HorizontalAlignment="Left" Margin="980,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="26"/>
+        <TextBox x:Name="creditHrs" HorizontalAlignment="Left" Margin="980,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="26"/>
+        <TextBox x:Name="courseNo" HorizontalAlignment="Left" Margin="980,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="26"/>
+        <Label Content="Course Name" HorizontalAlignment="Left" Margin="850,65,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
+        <Label Content="Course Number" HorizontalAlignment="Left" Margin="850,135,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
+        <Label Content="Credit Hours" HorizontalAlignment="Left" Margin="850,196,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
+        <Label Content="GPA" HorizontalAlignment="Left" Margin="850,259,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
+        <Button Content="Add A Course" HorizontalAlignment="Left" Margin="850,329,0,0" VerticalAlignment="Top" Height="37" Width="263"/>
+        <TextBox x:Name="totalGPA" HorizontalAlignment="Left" Margin="790
+                 ,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Height="26"/>
+        <Label Content="Total GPA" HorizontalAlignment="Left" Margin="675
+               ,382,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
+        <Label Content="Courses List" HorizontalAlignment="Left" Margin="623,14,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
 
     </Grid>
 </Window>

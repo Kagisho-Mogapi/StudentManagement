@@ -8,21 +8,21 @@ namespace StudentManagement
 {
     internal class Person
     {
-        string fName;
-        string lName;
-        string studID;
-        string gender;
-        byte age;
-        string level;
 
-        public Person(string fName, string lName, string studID, string gender, byte age, string level)
+        public Person(string fName, string lName, int studID, string gender, byte age, string level)
         {
-            this.fName = fName;
-            this.lName = lName;
-            this.studID = studID;
-            this.gender = gender;
-            this.age = age;
-            this.level = level;
+            FName = fName;
+            LName = lName;
+            StudID = studID;
+            Gender = gender;
+            Age = age;
+            Level = level;
         }
+        internal string FName { get; set; }
+        internal string LName { get; set; }
+        internal int StudID { get; set; }
+        internal string Gender { get; set; }
+        internal byte Age { get; set; }
+        internal string Level { get; set; }
     }
 }
